@@ -1,6 +1,14 @@
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import React from "react";
-import { SiNextdotjs, SiReact, SiTailwindcss } from "react-icons/si";
+import {
+  SiMongodb,
+  SiNextdotjs,
+  SiReact,
+  SiRedux,
+  SiSass,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 import Title from "./Title";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -9,33 +17,33 @@ import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 const Projects = () => {
   const projects = [
     {
-      title: "Portfolio Website",
-      tech: [SiNextdotjs, SiTailwindcss],
+      title: "Movix",
+      tech: [SiReact, SiSass, SiRedux],
       link: "https://moviemania-three.vercel.app/",
       cover: "/movix.jpeg",
       background: "bg-indigo-500",
     },
     {
-      title: "Food Delivery Website",
-      tech: [SiReact, SiTailwindcss],
-      link: "https://moviemania-three.vercel.app/",
-      cover: "/movix.jpeg",
+      title: "Witter",
+      tech: [SiNextdotjs, SiTailwindcss, SiMongodb, SiTypescript],
+      link: "https://witter-mu.vercel.app/",
+      cover: "/witter.jpeg",
       background: "bg-green-500",
     },
-    {
-      title: "Portfolio Website",
-      tech: [SiNextdotjs, SiTailwindcss],
-      link: "http://localhost:3000/",
-      cover: "/movix.jpeg",
-      background: "bg-indigo-500",
-    },
-    {
-      title: "Food Delivery Website",
-      tech: [SiReact, SiTailwindcss],
-      link: "http://localhost:3000/",
-      cover: "/movix.jpeg",
-      background: "bg-green-500",
-    },
+    // {
+    //   title: "Portfolio Website",
+    //   tech: [SiNextdotjs, SiTailwindcss],
+    //   link: "http://localhost:3000/",
+    //   cover: "/movix.jpeg",
+    //   background: "bg-green-500",
+    // },
+    // {
+    //   title: "Food Delivery Website",
+    //   tech: [SiReact, SiTailwindcss],
+    //   link: "http://localhost:3000/",
+    //   cover: "/movix.jpeg",
+    //   background: "bg-indigo-500",
+    // },
   ];
   return (
     <div className="py-10 p-5 sm:p-0">
